@@ -2,8 +2,8 @@ import requests
 import os
 
 main_api =  'https://api.github.com/'
-org = input('Enter organization name:')
-repo = input('Enter repositoryname:')
+org = raw_input('Enter organization name:')
+repo = raw_input('Enter repositoryname:')
 url = main_api + 'repos/' + org + '/' + repo + '/issues'
 print(url)
 response = requests.get(url)
